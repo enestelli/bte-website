@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTE Psikoloji Merkezi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      /* Scroll Animasyonları */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 1s ease-out;
+      }
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-white/90 backdrop-blur-md shadow fixed w-full z-10">
+      <div
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="assets/images/logo.jpg" alt="BTE Logo" class="h-10" />
+        </div>
+        <nav class="space-x-6 hidden md:flex">
+          <a href="#about" class="hover:text-green-600 transition"
+            >Hakkımızda</a
+          >
+          <a href="#services" class="hover:text-green-600 transition"
+            >Hizmetler</a
+          >
+          <a href="#team" class="hover:text-green-600 transition"
+            >Uzmanlarımız</a
+          >
+          <a href="#contact" class="hover:text-green-600 transition"
+            >İletişim</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="h-screen flex items-center justify-center bg-cover bg-center text-white text-center px-4 relative"
+      style="background-image: url('assets/images/hero1.jpg')"
+    >
+      <!-- Gradient Overlay -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-green-900/80 to-green-700/60"
+      ></div>
+      <div class="relative z-10 fade-in">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">
+          Daha Sağlıklı Bir Zihin İçin
+        </h2>
+        <p class="text-lg md:text-xl mb-6">
+          Profesyonel psikolojik destek ile hayatınıza denge katın.
+        </p>
+        <a
+          href="https://wa.me/905415187018"
+          target="_blank"
+          class="bg-white text-green-700 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-200 transition animate-bounce"
+          >Randevu Al</a
+        >
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-gray-100 px-6 fade-in">
+      <div class="container mx-auto text-center max-w-3xl">
+        <h3 class="text-3xl font-bold mb-6 text-green-700">Hakkımızda</h3>
+        <p class="text-lg text-gray-600 leading-relaxed">
+          2010 lu yılların başlarında tanıdık birbirimizi; "Yetişkinlerde çocuğa
+          duyarlılık geliştirilmesi" amaçlı çalışmalarda bulunurken... Çocuk
+          eksenli bir yaşamın inşa edilmesine katkı sağlamak gibi bir derdi
+          vardı her birimizin. Aile içinde, eğitim kurumlarında, çocuk ile
+          karşılaşılan her alanda çocuğun hak ettiği yerde olması, hak ettiği
+          gibi bir muamele görmesi, ceza ve mükafat kullanılmadan, olduğu hali
+          ile var olabilmesi idi derdimiz. Bu bağlamda çalışmalarımızı
+          profesyonel bir ortamda devam ettirmek, bilgi ve tecrübemizi kurumsal
+          bir çatı altında paylaşabilmek adına, 2015 yılında Bağlanma Terapileri
+          Merkezi'nde bir araya geldik. Hümanistik yaklaşımın insana pozitif
+          bakışını sürdürürken, Bağlanma Kuramı'nın ilişki problemlerine
+          getirdiği tanımdan yola çıktık. Problemi bulduğumuz yerde çözüm
+          sunabilecektik. Böylece çalışmalarımız geniş bir yelpazeye yayıldı.
+          <ul>Kurumumuzda;
+            <li>-Ebeveyn-çocuk ilişkisinin iyileştirilmesi.</li>
+          <li>-Güvenlibağlanma.</li>
+          <li>-Eşler arası ilişkinin iyileştirilmesi.</li>
+          <li>-Çocuğun yaşama uyumsağlamasının desteklenmesi.</li>
+          </ul> Konularında bireysel terapi, çift terapisi, grup terapisi
+          ve oyun terapisi ile destek vermeye başladık. Bunun yanı sıra bakış
+          açımızı kurumlarına personeline kazandırmak üzere kurumsal firmalarla
+          çalıştık. Çocuğa, çocukluğa, çocukluğumuza ve insana bakışımızdaki
+          duyarlılığı, yayabildiğimiz kadar yaymak niyetiyle varlığımızı bu
+          alanda keyifle sürdüreceğiz.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 px-6 fade-in">
+      <div class="container mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-10 text-green-700">Hizmetlerimiz</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition"
+          >
+            <div class="text-green-600 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 mx-auto"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 3v1m0 16v1m8-8h1M3 12H2m15.364-6.364l.707-.707M5.636 18.364l-.707.707M18.364 18.364l.707.707M5.636 5.636l-.707-.707M12 7a5 5 0 110 10 5 5 0 010-10z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-4">Bireysel Terapi</h4>
+            <p class="text-gray-600">
+              Kendinizi daha iyi tanımanız ve duygusal dengenizi sağlamanız için
+              destek.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition"
+          >
+            <div class="text-green-600 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 mx-auto"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 20l-8-8a4 4 0 015.657-5.657L12 7.343l2.343-2.343a4 4 0 115.657 5.657L12 20z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-4">Çift Terapisi</h4>
+            <p class="text-gray-600">
+              İlişkilerde iletişim sorunlarını aşmaya yönelik profesyonel
+              destek.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition"
+          >
+            <div class="text-green-600 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-12 h-12 mx-auto"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 20v-2a4 4 0 014-4h6a4 4 0 014 4v2M12 12a4 4 0 100-8 4 4 0 000 8z"
+                />
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold mb-4">Aile Danışmanlığı</h4>
+            <p class="text-gray-600">
+              Aile içi ilişkileri güçlendirmek ve sağlıklı bağlar kurmak için
+              terapi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="py-20 bg-gray-100 px-6 fade-in">
+      <div class="container mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-10 text-green-700">Uzmanlarımız</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Uzman Kartı -->
+          <div
+            class="relative group bg-white p-6 rounded-2xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="https://via.placeholder.com/200"
+              alt="Psikolog"
+              class="w-40 h-40 mx-auto rounded-full mb-4 object-cover"
+            />
+            <h4 class="text-xl font-semibold">Psikolog Ayşe Demir</h4>
+            <p class="text-gray-600">Bireysel & Aile Terapisti</p>
+
+            <!-- Overlay -->
+            <div
+              class="absolute inset-0 bg-green-700/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition"
+            >
+              <p class="text-white mb-4">Bağlantılar</p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-gray-200">
+                  <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-gray-200">
+                  <i class="fab fa-instagram text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Uzman Kartı -->
+          <div
+            class="relative group bg-white p-6 rounded-2xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="https://via.placeholder.com/200"
+              alt="Psikolog"
+              class="w-40 h-40 mx-auto rounded-full mb-4 object-cover"
+            />
+            <h4 class="text-xl font-semibold">Psikolog Mehmet Yılmaz</h4>
+            <p class="text-gray-600">Çift Terapisti</p>
+            <div
+              class="absolute inset-0 bg-green-700/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition"
+            >
+              <p class="text-white mb-4">Bağlantılar</p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-gray-200">
+                  <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-gray-200">
+                  <i class="fab fa-instagram text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Uzman Kartı -->
+          <div
+            class="relative group bg-white p-6 rounded-2xl shadow-lg overflow-hidden"
+          >
+            <img
+              src="https://via.placeholder.com/200"
+              alt="Psikolog"
+              class="w-40 h-40 mx-auto rounded-full mb-4 object-cover"
+            />
+            <h4 class="text-xl font-semibold">
+              Uzm. Klinik Psikolog Elif Kaya
+            </h4>
+            <p class="text-gray-600">Çocuk & Ergen Terapisti</p>
+            <div
+              class="absolute inset-0 bg-green-700/80 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition"
+            >
+              <p class="text-white mb-4">Bağlantılar</p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-white hover:text-gray-200">
+                  <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-gray-200">
+                  <i class="fab fa-instagram text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-6 fade-in">
+      <div class="container mx-auto text-center max-w-2xl">
+        <h3 class="text-3xl font-bold mb-6 text-green-700">İletişim</h3>
+        <p class="mb-4 text-gray-600">
+          Sorularınız veya randevu talepleriniz için bize ulaşın.
+        </p>
+        <p class="mb-2">
+          <strong>Telefon:</strong>
+          <a href="tel:+905555555555" class="text-green-600"
+            >+90 541 518 70 18
+            </a
+          >
+        </p>
+        <p class="mb-2">
+          <strong>E-posta:</strong>
+          <a href="mailto:baglanmaterapileri@gmail.com" class="text-green-600">baglanmaterapileri@gmail.com</a>
+        </p>
+        <p class="mb-6"><strong>Adres:</strong> İstanbul, Türkiye</p>
+        <a
+          href="https://wa.me/905555555555"
+          target="_blank"
+          class="bg-green-600 text-white px-6 py-3 rounded-full shadow hover:bg-green-700 transition"
+          >WhatsApp'tan Yaz</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white text-center py-6">
+      <p>© 2025 BTE Psikoloji Merkezi. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <!-- FontAwesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Scroll Animation Script -->
+    <script>
+      const elements = document.querySelectorAll(".fade-in");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      elements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
